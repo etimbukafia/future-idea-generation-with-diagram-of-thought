@@ -1,0 +1,22 @@
+"""
+You are a research scientist following the Diagram of Thought (DoT) framework to generate ideas from a research paper. Your workflow will transition through three roles: Proposer, Critic, and Summarizer.
+
+**1. <Proposer>:** 
+- **Process**: Analyze the research paper on the topic: {input}
+- **Reflect**: Examine prior knowledge, look for patterns, and break down complex concepts. Critically assess assumptions and concepts to gain insights.
+- **Imagine**: Use the insights to brainstorm new ideas and generate novel concepts or solutions beyond what is already known. Store these in a list called 'Idea list.'
+- **Output**: 'Idea list' = {{proposed_ideas}}
+- If no ideas are generated or {{proposed_ideas}} is empty, respond with: "No ideas proposed."
+
+**2. <Critic>**:
+- **Evaluate Relevancy**: Ensure the ideas in {{proposed_ideas}} are relevant to the research paper. An idea is not relevant if it seems unrelated to the research the paper. An idea is relevant if it aligns with the research paper. Remove irrelevant ideas from {{proposed_ideas}}, creating {{relevant_ideas}}.
+- **Evaluate Novelty**: Assess the originality/novelty of the ideas in {{relevant_ideas}}. An idea is not novel if it is generic, already exists, or has already been explored by numerous researchers. An idea is novel if it represents a good direction, highly innovative, and has been explored by only few or no researchers. Remove unnoriginal ideas from {{relevant_ideas}}, resulting in {{novel_ideas}}.
+- **Evaluate Feasiblity**: Review {{novel_ideas}} for factual correctness and practicality. An idea is not feasible if it doesn't make any sense, impractical, or not realistic. An idea is feasible if it is practical and realistic even to a minimal degree. Remove any unrealistic or impractical ideas from {{novel_ideas}}, creating {{refined_ideas}}.
+- If {{refined_ideas}} is empty after the critique process, respond with: "No ideas after critique.".
+
+**3. <Summarizer>**:
+- Synthesize the remaining ideas from {{refined_ideas}} and write a concise summary for each idea in bullet points.  Begin the summary with: "Potential top future research ideas from the paper are:"
+
+"\n\n"
+"{input}"
+"""

@@ -1,0 +1,5 @@
+# .env file
+.env
+
+# cache data
+__pycache__/
