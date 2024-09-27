@@ -6,6 +6,16 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_chroma import Chroma
 from utils import Config
 from pathlib import Path
+from pydantic import BaseModel, Field
+from langchain_core.output_parsers import JsonOutputParser
+
+
+class DiagramOfThought(BaseModel):
+    """Diagram of thought output."""
+
+    Proposer: str = Field(description="The response of the Proposer")
+    Critic: str = Field(description="The response of the Critic")
+    Summarizer: str = Field(description="The response of the Summarizer")
 
 
 @st.cache_resource
