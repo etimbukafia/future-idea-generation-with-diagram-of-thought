@@ -16,3 +16,25 @@ In this implementation, the LLM independently handles the entire process:
 The results were better than I what envisioned, and this just shows the potential for LLMs to contribute to innovative research development.
 After the process, I reviewed each idea, and more often than not, they were all relevant and novel (to the best of my knowledge).
 As for feasibility, it's challenging to judge without practical implementation—after all, in technology, nothing truly seems feasible until it’s achieved.
+
+# Installation
+Clone the respository:
+```bash
+git clone https://github.com/etimbukafia/future-idea-generation-with-diagram-of-thought.git
+cd future-idea-generation-with-diagram-of-thought
+```
+
+Create a virtual environment and install dependencies:
+```bash
+python -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+# Usage
+You can either run the implementation using the jupyter notebook or the streamlit chatbot
+
+To run the implementaion via the streamlit chatbot, run:
+```bash
+streamlit run main.py
+```
