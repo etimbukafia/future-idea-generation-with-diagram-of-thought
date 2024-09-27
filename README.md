@@ -14,5 +14,5 @@ In this implementation, the LLM independently handles the entire process:
 - The Summarizer synthesizes the remaining ideas and provides a concise summary for each one.
 
 The results were better than I what envisioned, and this just shows the potential for LLMs to contribute to innovative research development.
-After the process, I reviewed each idea and most times than not they were all relevant and novel. 
+After the process, I reviewed each idea, and more often than not, they were all relevant and novel (to the best of my knowledge).
 As for feasibility, it's challenging to judge without practical implementation—after all, in technology, nothing truly seems feasible until it’s achieved.
